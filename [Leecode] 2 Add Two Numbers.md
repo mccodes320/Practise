@@ -34,7 +34,8 @@ Constraints:
 * It is guaranteed that the list represents a number that does not have leading zeros.
 
 **解題時間**
-三天, 下班時間約1~2hr來寫
+題目難度: Medium
+解題時間: 三天, 下班時間約1~3hr來寫
 
 **試題心得**
 1. 因為要求有1~100個長度的數字進, 所以不要只想用簡單的int或long最相加
