@@ -33,6 +33,9 @@ Constraints:
 * 0 <= Node.val <= 9
 * It is guaranteed that the list represents a number that does not have leading zeros.
 
+**解題時間**
+三天, 下班時間約1~2hr來寫
+
 **試題心得**
 1. 因為要求有1~100個長度的數字進, 所以不要只想用簡單的int或long最相加
 2. 進位的時候因為val只是1~9的數字, 所以進位的部分+1就好, 可以不用再這麼麻煩看進位數是什麼數值
