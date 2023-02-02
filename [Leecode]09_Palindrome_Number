@@ -1,0 +1,86 @@
+
+![圖片](https://user-images.githubusercontent.com/118010660/216326304-93c06872-f12f-46ca-b228-ba1148d89c9c.png)
+
+花費 3 天共5小時
+解題心得:
+1. 又第一個字串開始往後判斷
+
+``` java
+package leecode;
+
+/**
+ * @author Macro
+ *
+ */
+public class String_to_Integer_atoi {
+   public int myAtoi(String s) {
+      // 放正負號
+      String flag = "";
+      s = s.trim();
+      //放置非符號的字串
+      String result = "";
+
+      char[] Stmp = s.toCharArray();
+      for (int i = 0; i < s.length(); i++) {
+         int StmpInt = Stmp[i];
+         // 如果是符號 + -
+         if ((45 == StmpInt || 43 == StmpInt)) {
+            // 代表開始
+            if (result.length() == 0 && flag.length() == 0)
+               flag += Stmp[i];
+            // 判斷正負號如果是在數字之後出現
+            else if (result.length() != 0 && flag.length() != 0)
+               break;
+            else if (result.length() != 0 && flag.length() == 0)
+               break;
+            else
+               return 0;
+         } else if ((48 <= StmpInt && StmpInt <= 57)) {
+            result += Stmp[i];
+         } else {
+            if(result.length() > 0)
+               break;
+            // 非正負號也非數字
+            else
+               return 0;
+         }
+      }
+
+      if (result.length() == 0)
+         return 0;
+      result = flag + result;
+      Double lStmp = Double.parseDouble(result);
+      if (lStmp > 2147483647)
+         return 2147483647;
+      else if (lStmp < -2147483648)
+         return -2147483648;
+      else {
+         return Integer.parseInt(result);
+      }
+   }
+
+   public static void main(String[] args) {
+      System.out.println("case01 1234567890 = > " + new String_to_Integer_atoi().myAtoi("1234567890"));
+      System.out.println("case02 -42 = > " + new String_to_Integer_atoi().myAtoi("   -42"));
+      System.out.println("case03 4193 = > " + new String_to_Integer_atoi().myAtoi("4193 with words"));
+      System.out.println("case04 0 = > " + new String_to_Integer_atoi().myAtoi("words and 987"));
+      System.out.println("case05 0 = > " + new String_to_Integer_atoi().myAtoi("0-42"));
+      System.out.println("case06 0 = > " + new String_to_Integer_atoi().myAtoi("=1+   +00+"));
+      System.out.println("case07 -2147483648 = > " + new String_to_Integer_atoi().myAtoi("-91283472332"));
+      System.out.println("case08 0 = > " + new String_to_Integer_atoi().myAtoi("-+12"));
+      System.out.println("case09 0 = > " + new String_to_Integer_atoi().myAtoi(""));
+      System.out.println("case10 0 = > " + new String_to_Integer_atoi().myAtoi("+"));
+      System.out.println("case11 0 = > " + new String_to_Integer_atoi().myAtoi(".1"));
+      System.out.println("case12 -12 = > " + new String_to_Integer_atoi().myAtoi("  -0012a42"));
+      System.out.println("case13 2147483647 = > " + new String_to_Integer_atoi().myAtoi("20000000000000000000"));
+      System.out.println("case14 -5 = > " + new String_to_Integer_atoi().myAtoi("-5-"));
+      System.out.println("case15 123 = > " + new String_to_Integer_atoi().myAtoi("123-"));
+   }
+}
+
+```
+
+
+
+
+
