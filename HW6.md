@@ -33,7 +33,7 @@ by filling in the correct conditions of the two while loops.
 
 j = 4
 while 0 < j :
- k = 0
+ k = 1
  while k <= j :
   print('#', end = "")
   k = k+1
