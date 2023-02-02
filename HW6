@@ -19,5 +19,28 @@ for i in range (0,n+1) :
  
 ```
   
-  
+Complete the following program that displays:
+
+####
+###
+##
+#
+
+by filling in the correct conditions of the two while loops.
+
+``` python
+# Complete the following program that displays:
+
+j = 4
+while 0 < j :
+ k = 0
+ while k <= j :
+  print('#', end = "")
+  k = k+1
+ print()
+ j = j-1
+
+```
+
+
   
