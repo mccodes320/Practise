@@ -114,9 +114,29 @@ main()
 ```
 
 
+**5. Consider the following program that counts the number of spaces in a user-supplied string. Modify the program to define and use a function, countSpaces, instead.**
+
+1. 學習把算術邏輯獨立拉到function中
+
+``` python
+def main() :
+   userInput = input("Enter a string: ")
+   # spaces = 0
+   # for char in userInput :
+   #    if char == " " :
+   #       spaces = spaces + 1
+   print(countSpaces(userInput))
 
 
+def countSpaces(userInput) :
+  spaces = 0
+  for char in userInput :
+    if char == " " :
+      spaces = spaces + 1
+  return spaces
 
+main()
+```
 
 
 
