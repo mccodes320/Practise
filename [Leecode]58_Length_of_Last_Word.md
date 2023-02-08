@@ -56,7 +56,7 @@ public class Length_of_Last_Word {
 
 ![圖片](https://user-images.githubusercontent.com/118010660/217549535-0af0307d-2679-49ce-9b10-67874ec3f72c.png)
 
-`` java
+``` java
 public class Length_of_Last_Word {
    public int lengthOfLastWord(String s) {
       return s.split(" ")[s.split(" ").length-1].length();
