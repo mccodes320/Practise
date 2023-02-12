@@ -25,6 +25,9 @@ Constraints:
     1 <= s.length, goal.length <= 100
     s and goal consist of lowercase English letters.
 
+解題心得:
+1. 用字串切割來做比對比較快
+2. 其實可以優化, 計算出的字串是不是可以跟goal依樣, 如果題目字串更常, 重複性更高, 那寫法就要改了
 
 
 ``` java
