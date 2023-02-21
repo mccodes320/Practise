@@ -1,5 +1,8 @@
+6. Zigzag Conversion
+
 ![圖片](https://user-images.githubusercontent.com/118010660/220390376-48892ceb-0ed7-4f81-b931-3e4038f53ffd.png)
 
+ref: https://leetcode.com/problems/zigzag-conversion/description/
 
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 
