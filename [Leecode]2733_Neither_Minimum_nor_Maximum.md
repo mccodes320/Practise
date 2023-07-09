@@ -33,7 +33,7 @@ Constraints:
 
  ![圖片](https://github.com/mccodes320/Practise/assets/118010660/af07d75c-e8ad-480e-8cfb-cb526da868e5)
 
-''' java
+``` java
 class Solution {
     public int findNonMinOrMax(int[] nums) {
       if (nums.length <= 2)
@@ -42,4 +42,4 @@ class Solution {
       return nums[1];
     }
 }
-'''
+```
