@@ -2,7 +2,8 @@ Given an integer array nums containing distinct positive integers, find and retu
 
 Return the selected integer.
 
- 
+
+
 
 Example 1:
 
@@ -30,7 +31,7 @@ Constraints:
     1 <= nums[i] <= 100
     All values in nums are distinct
 
-
+ ![圖片](https://github.com/mccodes320/Practise/assets/118010660/af07d75c-e8ad-480e-8cfb-cb526da868e5)
 
 ''' java
 class Solution {
