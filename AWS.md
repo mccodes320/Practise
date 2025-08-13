@@ -36,8 +36,7 @@ Confusion Matrix（混淆矩陣）
 
 
 
-
-### 
+ 
 Transparency 透明度
 Explainability 可解釋性
 
@@ -112,28 +111,33 @@ small language models (SLMs) on edge devices
 1. Amazon Rekognition:圖像和影片分析服務
 
 2. Amazon SageMaker Feature Store 特徵商店
-- 特徵商店 (Feature Store) 是一個集中式的儲存庫，用於儲存、管理和共享機器學習模型的特徵 (features)。
-- 它允許不同的團隊輕鬆地發現、存取和重複使用已經建立好的特徵，而無需重複開發。
-- 它提供版本控制、元數據管理、線上/離線存取等功能，方便多個團隊協作和管理特徵。
-- 完全符合需求：特徵商店是專為解決跨團隊共享和管理機器學習特徵而設計的。
-
+ - 特徵商店 (Feature Store) 是一個集中式的儲存庫，用於儲存、管理和共享機器學習模型的特徵 (features)。
+ - 它允許不同的團隊輕鬆地發現、存取和重複使用已經建立好的特徵，而無需重複開發。
+ - 它提供版本控制、元數據管理、線上/離線存取等功能，方便多個團隊協作和管理特徵。
+ - 完全符合需求：特徵商店是專為解決跨團隊共享和管理機器學習特徵而設計的。
 
 3. Amazon SageMaker Data Wrangler
  - 準備和轉換數據的工具，例如數據清理、特徵工程、數據可視化等。它主要用於數據預處理階段，而不是用於共享和管理已經建立好的特徵。
 
-### Amazon SageMaker Clarify ###
+4. Amazon SageMaker Clarify 
  - 檢測和減輕機器學習模型的偏差 (bias)，並提供模型可解釋性 (explainability) 的洞察。
  - Identifies potential bias during data preparation 在資料準備階段識別潛在的偏見
 
-### Amazon SageMaker Model Cards ###
+5. Amazon SageMaker Model Cards
  - 用於記錄機器學習模型元數據（例如模型目的、訓練數據、性能指標）的標準化格式。雖然它有助於模型的可追溯性和透明度，但它不是用於共享和管理模型開發中使用的變數（特徵）。
 
-### Amazon Polly ###
-文字轉語音服務
+6. Amazon Polly
+ - 文字轉語音服務
+ - 
+7.  Amazon Rekognition
+ - 圖像和影片分析服務
 
-### Amazon Rekognition ###
-圖像和影片分析服務
- 
+8. Amazon SageMaker Canvas
+ - 業務分析師設計的視覺化點擊式介面，允許使用者在不需要編寫任何程式碼的情況下建立機器學習模型。
+ - 預測模型建立
+ - 數據導入和選擇
+
+
 Amazon SageMaker
 
 
