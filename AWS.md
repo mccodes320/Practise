@@ -36,6 +36,7 @@ Confusion Matrix（混淆矩陣）
 
 
 
+
 ### 
 Transparency 透明度
 Explainability 可解釋性
@@ -89,9 +90,8 @@ Amazon SageMaker Ground Truth Plus：
 Data augmentation
 這是一種擴充訓練數據集的技術，例如旋轉圖像、增加雜訊等，旨在提高模型泛化能力。它本身不是一種生成新圖像的工具，也無法直接「最小化錯誤標註」。
  
- Amazon Bedrock knowledge base：這是為大型語言模型 (LLM) 提供檢索增強生成 (RAG) 功能的，主要用於文字，與圖像生成和標註無關。
+Amazon Bedrock knowledge base：這是為大型語言模型 (LLM) 提供檢索增強生成 (RAG) 功能的，主要用於文字，與圖像生成和標註無關。
 
-Amazon Rekognition 進行圖像識別
 
 Amazon QuickSight Q 進行數據彙總
  是一個商業智慧 (BI) 服務，允許用戶透過自然語言查詢數據並獲得可視化的彙總。這與圖像生成或錯誤標註的風險完全無關
@@ -107,24 +107,33 @@ small language models (SLMs) on edge devices
 
  large language models (LLMs) on edge devices
 
-Amazon SageMaker Feature Store 特徵商店
+
+## AWS 服務
+1. Amazon Rekognition:圖像和影片分析服務
+
+2. Amazon SageMaker Feature Store 特徵商店
 - 特徵商店 (Feature Store) 是一個集中式的儲存庫，用於儲存、管理和共享機器學習模型的特徵 (features)。
 - 它允許不同的團隊輕鬆地發現、存取和重複使用已經建立好的特徵，而無需重複開發。
 - 它提供版本控制、元數據管理、線上/離線存取等功能，方便多個團隊協作和管理特徵。
 - 完全符合需求：特徵商店是專為解決跨團隊共享和管理機器學習特徵而設計的。
 
 
-Amazon SageMaker Data Wrangler
+3. Amazon SageMaker Data Wrangler
  - 準備和轉換數據的工具，例如數據清理、特徵工程、數據可視化等。它主要用於數據預處理階段，而不是用於共享和管理已經建立好的特徵。
 
-Amazon SageMaker Clarify
+### Amazon SageMaker Clarify ###
  - 檢測和減輕機器學習模型的偏差 (bias)，並提供模型可解釋性 (explainability) 的洞察。
+ - Identifies potential bias during data preparation 在資料準備階段識別潛在的偏見
 
-
-Amazon SageMaker Model Cards
+### Amazon SageMaker Model Cards ###
  - 用於記錄機器學習模型元數據（例如模型目的、訓練數據、性能指標）的標準化格式。雖然它有助於模型的可追溯性和透明度，但它不是用於共享和管理模型開發中使用的變數（特徵）。
 
+### Amazon Polly ###
+文字轉語音服務
 
+### Amazon Rekognition ###
+圖像和影片分析服務
+ 
 Amazon SageMaker
 
 
@@ -193,4 +202,7 @@ A. Supervised learning (監督式學習)：監督式學習的定義就是從帶�
 
 <img width="640" height="539" alt="image" src="https://github.com/user-attachments/assets/21aa0df4-9efc-449c-b74d-843a6c3e14ce" />
 
+## 評估方法
 
+Benchmark datasets (基準數據集): 評估模型性能，包括偏見和公平性的預定義、已標註的數據集。
+Content moderation guidelines (內容審核指南): 內容審核指南是規則和原則
